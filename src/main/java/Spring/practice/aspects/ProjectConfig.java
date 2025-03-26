@@ -10,13 +10,18 @@ import org.springframework.context.annotation.EnableAspectJAutoProxy;
 @ComponentScan(basePackages = "Spring.practice.aspects")
 @EnableAspectJAutoProxy
 public class ProjectConfig {
+//    @Bean
+//    public CommentService commentService() {
+//        return new CommentService();
+//    }
+
     @Bean
-    public CommentService commentService() {
-        return new CommentService();
+    public LoggingAspect loggingAspect() {
+        return new LoggingAspect();
     }
 
     @Bean
-    public LoggingAspect aspect() {
-        return new LoggingAspect();
+    public SecurityAspect securityAspect() {
+        return new SecurityAspect();
     }
 }

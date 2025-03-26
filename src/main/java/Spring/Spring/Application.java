@@ -20,8 +20,7 @@ public class Application {
 		comment.setText("Demo comment");
 		comment.setAuthor("natash");
 
-		String value = service.publishComment(comment);
-		logger.info(value);
+		service.publishComment(comment);
 	}
 
 }
