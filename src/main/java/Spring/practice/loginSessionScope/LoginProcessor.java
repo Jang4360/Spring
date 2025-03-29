@@ -13,11 +13,14 @@ import org.springframework.web.context.annotation.RequestScope;
 @Setter
 public class LoginProcessor {
     private final LoggedUserManagementService loggedUserManagementService;
+    private final LoginCountService loginCountService;
 
     private String username;
     private String password;
 
     public boolean login(){
+        loginCountService.increment();
+
         String username = this.getUsername();
         String password = this.getPassword();
         boolean loginResult = false;
@@ -27,6 +30,4 @@ public class LoginProcessor {
         }
         return loginResult;
     }
-
-
 }

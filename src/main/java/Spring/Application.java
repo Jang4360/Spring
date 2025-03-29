@@ -1,10 +1,9 @@
-package Spring.Spring;
+package Spring;
 
 import Spring.practice.aspects.Comment;
 import Spring.practice.aspects.Main;
 import Spring.practice.aspects.services.CommentService;
 import Spring.practice.aspects.ProjectConfig;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import java.util.logging.Logger;
