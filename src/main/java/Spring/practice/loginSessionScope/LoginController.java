@@ -1,6 +1,5 @@
 package Spring.practice.loginSessionScope;
 
-import Spring.practice.loginRequestScope.LoginProcessor;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
