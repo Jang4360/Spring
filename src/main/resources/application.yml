@@ -4,3 +4,15 @@ server:
 name:
   service:
     url: http://localhost:8080
+
+custom:
+  datasource:
+    url: jdbc:mysql://localhost:3306/practice?useSSL=false&serverTimezone=UTC
+    username: root
+    password: jang4360
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+spring:
+  sql:
+    init:
+      mode: always # Spring Boot 2.5+ 이상부터는 이걸 사용
