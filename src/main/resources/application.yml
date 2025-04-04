@@ -16,3 +16,5 @@ spring:
   sql:
     init:
       mode: always # Spring Boot 2.5+ 이상부터는 이걸 사용
+      schema-locations: classpath:schema.sql
+      data-locations: classpath:data.sql
