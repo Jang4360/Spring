@@ -28,4 +28,5 @@ public class AccountRepository {
         String sql = "SELECT * FROM account";
         return jdbc.query(sql, new AccountRowMapper());
     }
+
 }
