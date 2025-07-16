@@ -14,7 +14,7 @@ class Exercise14_1 {
     }
 
     public static void main(String[] args) {
-        // 람다식으로 myfunction의 run 구현
+        // 람다식으로 myFunction run 구현
         MyFunction f1 = () -> System.out.println("f1.run()");
         MyFunction f2 = new MyFunction() {
             @Override
